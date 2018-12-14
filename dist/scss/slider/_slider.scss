@@ -1,0 +1,153 @@
+.ad-slide-group {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%; // min-width: 300px;
+    height: auto;
+    min-height: 100px;
+    position: relative;
+    overflow: hidden;
+
+    .ad-slide {
+        margin: 0;
+        padding: 0; // float:left;
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        @include transEase(2s);
+        display: none;
+        opacity: 1;
+        z-index: 3;
+
+        &.active {
+            z-index: 5;
+            animation: anim-fadeIn 1s ease 0s 1; // anima
+            display: block; // opacity: 1;
+        }
+
+        &.exit {
+            z-index: 3;
+            animation: anim-fadeInExit 1s ease 0s 1;
+        }
+    }
+
+    // Bullet
+
+    .ad-slide-bullet {
+        position: absolute;
+        width: 300px;
+        display: inline-block;
+        z-index: 50;
+        height: 10px; // background-color: red;
+        bottom: 10%;
+        left: 50%;
+        margin-left: -150px;
+        text-align: center;
+
+        span {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            background-color: white;
+            height: 2px;
+            width: 15%;
+            margin: 0 5px;
+            border-radius: 3px;
+            opacity: 1;
+            cursor: pointer;
+            @include transEase(0.3s);
+
+            &.active {
+                opacity: 1;
+                background-color: darken($dark, 0.7);
+            }
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+
+    &[roundBullet] {
+        .ad-slide-bullet {
+            span {
+                width: 7px;
+                height: 7px;
+                margin-top: -5px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    // Controls
+    .ad-slide-previous {
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        width: 60px;
+        height: 60px;
+        margin-top: -30px;
+        // background-color:chocolate;
+        // opacity: .7;
+        cursor: pointer;
+        text-align: center;
+        @include transEase(0.3s);
+        z-index: 10;
+
+        &>i {
+            line-height: 60px;
+        }
+
+        &>.ad-btn {
+            background-color: rgba($dark, 0.5);
+            color: white;
+        }
+
+        &:hover {
+            // opacity: 1;
+            left: 0;
+        }
+
+        &:active {
+            transform: scale(1.1);
+        }
+    }
+
+    .ad-slide-next {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        width: 60px;
+        height: 60px;
+        margin-top: -30px;
+        //  background-color:chocolate;
+        opacity: 1;
+        cursor: pointer;
+        text-align: center;
+        @include transEase(0.3s);
+        z-index: 10;
+
+        &>i {
+            line-height: 60px;
+        }
+
+        &>.ad-btn {
+            background-color: rgba($dark, 0.5);
+            color: white;
+            transform: translateX(8px);
+        }
+
+        &:hover {
+            opacity: 1;
+            right: 0;
+        }
+
+        &:active {
+            transform: scale(1.1);
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.ad-slide-group {
+
+    // In
+    &[effect='zoomIn'] {
+        .ad-slide {
+            &.active {
+                animation: anim-zoomIn 1s ease 0s 1;
+            }
+
+            &.exit {
+                animation: anim-zoomInExit 1s ease 0s 1;
+            }
+        }
+    }
+
+    //   Out
+    &[effect='zoomOut'] {
+        .ad-slide {
+            &.active {
+                animation: anim-zoomOut 1s ease 0s 1;
+            }
+
+            &.exit {
+                animation: anim-zoomOutExit 1s ease 0s 1;
+            }
+        }
+    }
+}

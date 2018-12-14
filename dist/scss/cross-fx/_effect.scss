@@ -1,0 +1,54 @@
+.ad-slide-group {
+
+    // Left
+    &[effect='crossLeft'] {
+        .ad-slide {
+            &.active {
+                animation: anim-slideLeft 1s ease-in 0s 1;
+            }
+
+            &.exit {
+                animation: anim 1s ease-out 0s 1;
+            }
+        }
+    }
+
+    //   Right
+    &[effect='crossRight'] {
+        .ad-slide {
+            &.active {
+                animation: anim-slideRight 1s ease-in 0s 1;
+            }
+
+            &.exit {
+                animation: anim 1s ease-out 0s 1;
+            }
+        }
+    }
+
+    //   Up
+    &[effect='crossUp'] {
+        .ad-slide {
+            &.active {
+                animation: anim-slideUp 1s ease-out 0s 1;
+            }
+
+            &.exit {
+                animation: anim 1s ease-in 0s 1;
+            }
+        }
+    }
+
+    //   Down
+    &[effect='crossDown'] {
+        .ad-slide {
+            &.active {
+                animation: anim-slideDown 1s ease-out 0s 1;
+            }
+
+            &.exit {
+                animation: anim 1s ease-in 0s 1;
+            }
+        }
+    }
+}

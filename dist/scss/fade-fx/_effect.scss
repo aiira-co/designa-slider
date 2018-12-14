@@ -1,0 +1,13 @@
+.ad-slide-group {
+    &[effect='fadeIn'] {
+        .ad-slide {
+            &.active {
+                animation: anim-fadeIn 1s ease 0s 1;
+            }
+
+            &.exit {
+                animation: anim-fadeInExit 1s ease 0s 1;
+            }
+        }
+    }
+}
