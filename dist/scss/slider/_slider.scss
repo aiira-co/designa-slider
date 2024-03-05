@@ -1,4 +1,4 @@
-.ad-slide-group {
+.#{$classPrefix}-slide-group {
     margin: 0;
     padding: 0;
     display: block;
@@ -8,7 +8,7 @@
     position: relative;
     overflow: hidden;
 
-    .ad-slide {
+    .#{$classPrefix}-slide {
         margin: 0;
         padding: 0; // float:left;
         width: 100%;
@@ -37,7 +37,7 @@
 
     // Bullet
 
-    .ad-slide-bullet {
+    .#{$classPrefix}-slide-bullet {
         position: absolute;
         width: 300px;
         display: inline-block;
@@ -73,7 +73,7 @@
     }
 
     &[roundBullet] {
-        .ad-slide-bullet {
+        .#{$classPrefix}-slide-bullet {
             span {
                 width: 7px;
                 height: 7px;
@@ -84,7 +84,7 @@
     }
 
     // Controls
-    .ad-slide-previous {
+    .#{$classPrefix}-slide-previous {
         position: absolute;
         left: 5px;
         top: 50%;
@@ -102,7 +102,7 @@
             line-height: 60px;
         }
 
-        &>.ad-btn {
+        &>.#{$classPrefix}-btn {
             background-color: rgba($dark, 0.5);
             color: white;
         }
@@ -117,7 +117,7 @@
         }
     }
 
-    .ad-slide-next {
+    .#{$classPrefix}-slide-next {
         position: absolute;
         right: 5px;
         top: 50%;
@@ -135,7 +135,7 @@
             line-height: 60px;
         }
 
-        &>.ad-btn {
+        &>.#{$classPrefix}-btn {
             background-color: rgba($dark, 0.5);
             color: white;
             transform: translateX(8px);

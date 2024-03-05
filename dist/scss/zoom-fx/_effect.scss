@@ -1,8 +1,8 @@
-.ad-slide-group {
+.#{$classPrefix}-slide-group {
 
     // In
     &[effect='zoomIn'] {
-        .ad-slide {
+        .#{$classPrefix}-slide {
             &.active {
                 animation: anim-zoomIn 1s ease 0s 1;
             }
@@ -15,7 +15,7 @@
 
     //   Out
     &[effect='zoomOut'] {
-        .ad-slide {
+        .#{$classPrefix}-slide {
             &.active {
                 animation: anim-zoomOut 1s ease 0s 1;
             }

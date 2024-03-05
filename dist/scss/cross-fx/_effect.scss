@@ -1,8 +1,8 @@
-.ad-slide-group {
+.#{$classPrefix}-slide-group {
 
     // Left
     &[effect='crossLeft'] {
-        .ad-slide {
+        .#{$classPrefix}-slide {
             &.active {
                 animation: anim-slideLeft 1s ease-in 0s 1;
             }
@@ -15,7 +15,7 @@
 
     //   Right
     &[effect='crossRight'] {
-        .ad-slide {
+        .#{$classPrefix}-slide {
             &.active {
                 animation: anim-slideRight 1s ease-in 0s 1;
             }
@@ -28,7 +28,7 @@
 
     //   Up
     &[effect='crossUp'] {
-        .ad-slide {
+        .#{$classPrefix}-slide {
             &.active {
                 animation: anim-slideUp 1s ease-out 0s 1;
             }
@@ -41,7 +41,7 @@
 
     //   Down
     &[effect='crossDown'] {
-        .ad-slide {
+        .#{$classPrefix}-slide {
             &.active {
                 animation: anim-slideDown 1s ease-out 0s 1;
             }

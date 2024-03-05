@@ -1,8 +1,8 @@
-.ad-slide-group {
+.#{$classPrefix}-slide-group {
 
     // Left
     &[effect='slideLeft'] {
-        .ad-slide {
+        .#{$classPrefix}-slide {
             &.active {
                 animation: anim-slideLeft 1s ease-out 0s 1;
             }
@@ -15,7 +15,7 @@
 
     // Right
     &[effect='slideRight'] {
-        .ad-slide {
+        .#{$classPrefix}-slide {
             &.active {
                 animation: anim-slideRight 1s ease-out 0s 1;
             }
@@ -28,7 +28,7 @@
 
     // Up
     &[effect='slideUp'] {
-        .ad-slide {
+        .#{$classPrefix}-slide {
             &.active {
                 animation: anim-slideUp 1s ease-out 0s 1;
             }
@@ -41,7 +41,7 @@
 
     //   Down
     &[effect='slideDown'] {
-        .ad-slide {
+        .#{$classPrefix}-slide {
             &.active {
                 animation: anim-slideDown 1s ease-out 0s 1;
             }

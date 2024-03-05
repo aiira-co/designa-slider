@@ -1,6 +1,6 @@
-.ad-slide-group {
+.#{$classPrefix}-slide-group {
     &[effect='fadeIn'] {
-        .ad-slide {
+        .#{$classPrefix}-slide {
             &.active {
                 animation: anim-fadeIn 1s ease 0s 1;
             }
