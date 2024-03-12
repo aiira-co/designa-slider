@@ -55,8 +55,8 @@
             background-color: white;
             height: 2px;
             width: 15%;
-            margin: 0 5px;
-            border-radius: 3px;
+            margin: 0 0.5rem;
+            border-radius: 0.3rem;
             opacity: 1;
             cursor: pointer;
             @include transEase(0.3s);
@@ -77,7 +77,7 @@
             span {
                 width: 7px;
                 height: 7px;
-                margin-top: -5px;
+                margin-top: -0.5rem;
                 border-radius: 50%;
             }
         }
@@ -86,11 +86,11 @@
     // Controls
     .#{$classPrefix}-slide-previous {
         position: absolute;
-        left: 5px;
+        left: 0.5rem;
         top: 50%;
         width: 60px;
         height: 60px;
-        margin-top: -30px;
+        margin-top: -3.0rem;
         // background-color:chocolate;
         // opacity: .7;
         cursor: pointer;
@@ -119,11 +119,11 @@
 
     .#{$classPrefix}-slide-next {
         position: absolute;
-        right: 5px;
+        right: 0.5rem;
         top: 50%;
         width: 60px;
         height: 60px;
-        margin-top: -30px;
+        margin-top: -3.0rem;
         //  background-color:chocolate;
         opacity: 1;
         cursor: pointer;
@@ -138,7 +138,7 @@
         &>.#{$classPrefix}-btn {
             background-color: rgba($dark, 0.5);
             color: white;
-            transform: translateX(8px);
+            transform: translateX(0.8rem);
         }
 
         &:hover {

@@ -271,7 +271,7 @@ $(document).ready(function () {
                     prevNav =
                         '<div  class="ad-slide-previous "><button class="ad-btn ad-sm ad-flat ad-round ad-icon no-margin"><i class="fa fa-angle-left "></i></button></div>';
                     nextNav =
-                        '<div  class="ad-slide-next "><button class="ad-btn ad-sm ad-flat ad-round ad-icon no-margin" style="margin-left:-8px;"><i class="fa fa-angle-right "></i></button></div>';
+                        '<div  class="ad-slide-next "><button class="ad-btn ad-sm ad-flat ad-round ad-icon no-margin" style="margin-left:-0.8rem;"><i class="fa fa-angle-right "></i></button></div>';
                     $this.append(prevNav + nextNav);
                 }
 
